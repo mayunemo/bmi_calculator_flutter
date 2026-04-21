@@ -29,7 +29,7 @@ setState(() {
         width: double.infinity,
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Colors.cyanAccent, Colors.cyan],
+            colors: [const Color.fromARGB(255, 255, 206, 59), const Color.fromARGB(255, 233, 129, 25)],
             begin: AlignmentGeometry.bottomStart,
             end: AlignmentGeometry.topEnd,
           ),
@@ -39,8 +39,8 @@ setState(() {
             children: [
               Text(
                 "BMI CALCULATOR",
-                style: GoogleFonts.rubikBubbles(
-                  color: Colors.lightGreen,
+                style: GoogleFonts.oswald(
+                  color: Colors.black,
                   fontSize: 30,
                 ),
               ),
@@ -64,19 +64,19 @@ setState(() {
                             labelText: "Height(cm)",
                             hintStyle: TextStyle(),
                             labelStyle: TextStyle(),
-                            fillColor: Colors.lightGreen,
+                            fillColor: const Color.fromARGB(255, 230, 218, 103),
                             filled: true,
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
                               borderSide: BorderSide(
-                                color: Colors.blueGrey,
+                                color: Colors.black,
                                 width: 3,
                               ),
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20),
                               borderSide: BorderSide(
-                                color: Colors.blueGrey,
+                                color: Colors.black,
                                 width: 3,
                               ),
                             ),
@@ -90,11 +90,17 @@ setState(() {
                             labelText: "Weight(kg)",
                             hintStyle: TextStyle(),
                             labelStyle: TextStyle(),
-                            fillColor: Colors.lightGreen,
-                            filled: true,
+                            fillColor: const Color.fromARGB(255, 242, 227, 91),
+                            filled: true,  focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(20),
+                              borderSide: BorderSide(
+                                color: Colors.black,
+                                width: 3,
+                              ),
+                            ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Colors.blueGrey,width:3 ),
+                              borderSide: BorderSide(color: Colors.black,width:3 ),
                             ),
                           ),
                         ),
@@ -107,18 +113,18 @@ setState(() {
                             width: 300,
                             decoration: BoxDecoration(
                               gradient: LinearGradient(
-                                colors: [Colors.cyan, Colors.cyanAccent],
+                                colors: [const Color.fromARGB(255, 255, 222, 59), const Color.fromARGB(255, 240, 176, 15)],
                                 begin: AlignmentGeometry.bottomLeft,
                                 end: AlignmentGeometry.topRight,
                               ),
                             ),
-                            child: Center(child: Text("calculate")),
+                            child: Center(child: Text("calculate",style: TextStyle(fontWeight: FontWeight.bold),)),
                           ),
                         ),
                            SizedBox(height: 30,),
                     
                     
-                        Text(result,style: TextStyle(fontSize: 25,color: Colors.grey),)
+                        Text(result,style: TextStyle(fontSize: 25,color: Colors.black),)
                       ],
                     ),
                   ),
