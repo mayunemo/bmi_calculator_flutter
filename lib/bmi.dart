@@ -48,7 +48,7 @@ setState(() {
               SizedBox(height: 30),
               SizedBox(
                 width: 500,
-                height: 500,
+                height: 400,
                 child: Card(
                   color: const Color.fromARGB(255, 229, 220, 220),
                   child: Padding(
